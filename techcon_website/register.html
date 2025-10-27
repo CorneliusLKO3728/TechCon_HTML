@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Innovation Conference 2024</title>
+    <title>Register for TechCon 2024</title>
     <style>
         * {
             margin: 0;
@@ -64,7 +65,7 @@
         }
 
         main {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 3rem auto;
             padding: 0 2rem;
         }
@@ -84,21 +85,68 @@
             padding-bottom: 0.5rem;
         }
 
-        section p {
-            margin-bottom: 2rem;
-            font-size: 1.1rem;
-            line-height: 1.8;
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
             color: #555;
         }
 
-        video {
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
             width: 100%;
-            max-width: 800px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            display: block;
-            margin: 0 auto;
+            padding: 0.75rem;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin: 2rem 0;
+        }
+
+        input[type="checkbox"] {
+            margin-top: 0.25rem;
+            transform: scale(1.2);
+        }
+
+        .checkbox-group label {
+            font-weight: normal;
+            margin-bottom: 0;
+        }
+
+        button[type="submit"] {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        button[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         footer {
@@ -136,12 +184,12 @@
 </head>
 <body>
     <header>
-        <h1>Tech Innovation Conference 2025</h1>
+        <h1>Register for TechCon 2024</h1>
         <nav>
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="register.html">Register</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -149,29 +197,40 @@
 
     <main>
         <section>
-            <h2>Welcome to Tech Innovation Conference 2025</h2>
-            <p>
-                Join us for the most anticipated technology conference of the year! The Tech Innovation Conference 2025 brings together industry leaders, innovative startups, and technology enthusiasts from around the globe. Experience three days of cutting-edge presentations, interactive workshops, and networking opportunities that will shape the future of technology. Whether you're a developer, entrepreneur, or tech enthusiast, this conference offers invaluable insights into artificial intelligence, blockchain, cloud computing, and emerging technologies that are transforming our world.
-            </p>
-            <p>
-                Don't miss this opportunity to connect with visionaries, learn from experts, and discover the innovations that will define tomorrow. Reserve your spot today and be part of the technological revolution!
-            </p>
+            <h2>Conference Registration</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);">
-                <iframe 
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0" 
-                    title="Conference Promotional Video" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
-            </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the Terms and Conditions and Privacy Policy</label>
+                </div>
+
+                <button type="submit">Register Now</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; Copyright 2025 Tech Innovation Conference. All rights reserved.</p>
+        <p>&copy; Copyright 2024 TechCon. All rights reserved.</p>
     </footer>
 </body>
 </html>

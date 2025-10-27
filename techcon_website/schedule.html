@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule for TechCon 2024</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            text-align: center;
+            padding: 2rem 1rem 1rem;
+            font-size: 2.5rem;
+            color: #667eea;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background: #667eea;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            background: white;
+            border-radius: 15px;
+            padding: 3rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow-x: auto;
+        }
+
+        section h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        caption {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 1rem;
+            caption-side: top;
+            text-align: center;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #667eea;
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background-color: #f5f7fa;
+        }
+
+        .time-column {
+            width: 15%;
+            font-weight: 600;
+        }
+
+        .session-column {
+            width: 55%;
+        }
+
+        .speaker-column {
+            width: 30%;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: center;
+            }
+
+            section {
+                padding: 2rem 1.5rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            th, td {
+                padding: 0.75rem 0.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Schedule for TechCon 2024</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Conference Schedule</h2>
+            <table>
+                <caption>Detailed Schedule of Events for TechCon 2024</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" class="time-column">Time</th>
+                        <th scope="col" class="session-column">Session</th>
+                        <th scope="col" class="speaker-column">Speaker</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8:00 AM - 9:00 AM</td>
+                        <td>Registration & Welcome Breakfast</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 AM - 9:30 AM</td>
+                        <td>Opening Keynote: The Future of Technology</td>
+                        <td>Dr. James Chen</td>
+                    </tr>
+                    <tr>
+                        <td>9:30 AM - 10:30 AM</td>
+                        <td>AI Revolution: Beyond the Hype</td>
+                        <td>Sarah Martinez</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 AM - 11:00 AM</td>
+                        <td>Coffee Break & Networking</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 AM - 12:00 PM</td>
+                        <td>Cloud Computing: Next Generation Infrastructure</td>
+                        <td>Michael Foster</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 PM - 1:00 PM</td>
+                        <td>Lunch Break</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>1:00 PM - 2:00 PM</td>
+                        <td>Quantum Computing: The Next Frontier</td>
+                        <td>Dr. Aisha Patel</td>
+                    </tr>
+                    <tr>
+                        <td>2:00 PM - 3:00 PM</td>
+                        <td>Cybersecurity in the Modern Age</td>
+                        <td>Sarah Martinez</td>
+                    </tr>
+                    <tr>
+                        <td>3:00 PM - 3:30 PM</td>
+                        <td>Afternoon Break</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>3:30 PM - 4:30 PM</td>
+                        <td>Startup Success Stories</td>
+                        <td>Robert Kim</td>
+                    </tr>
+                    <tr>
+                        <td>4:30 PM - 5:30 PM</td>
+                        <td>Designing for Humans: UX Principles</td>
+                        <td>Emma Thompson</td>
+                    </tr>
+                    <tr>
+                        <td>5:30 PM - 6:00 PM</td>
+                        <td>Closing Remarks & Day 1 Wrap-up</td>
+                        <td>Dr. James Chen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2024 TechCon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
